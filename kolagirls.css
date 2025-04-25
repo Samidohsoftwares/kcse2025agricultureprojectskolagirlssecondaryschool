@@ -1,0 +1,97 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #6DC7D1;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+    }
+    
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      text-align: center;
+    }
+    
+    .logo {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+      border-radius: 20px;
+    }
+    
+
+    nav {
+      background-color: #5438DC;
+      padding: 1.5rem;
+      text-align: center;
+      font-weight: 500;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 2rem;
+    }
+   
+    .student-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 50px;
+      padding: 40px;
+    }
+    
+    .student-card {
+      background-color: #ffdafc;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 8px 16px rgba(247, 16, 162, 0.9);
+      text-align: center;
+    }
+    
+    .student-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    
+    .student-card video {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .student-grid {
+        display: block; /* Stop using grid on small screens */
+        text-align: center;
+      }
+    
+      .student-card {
+        display: inline-block;
+        width: 90%;
+        margin: 10px auto;
+      }
+    
+      .student-card img,
+      .student-card video {
+        width: 100%;
+        height: auto;
+      }
+    }
+    
+    
+  
